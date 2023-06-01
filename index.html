@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .parent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      height: 630px;
+      width: 630px;
+      display: grid;
+      gap: 10px;
+      background-color: black;
+      grid-template-rows: 200px 250px 75px 75px;
+      grid-template-columns: 150px 430px 20px;
+    }
+
+    .first{
+      background-color: #EEE3CB;
+    }
+
+    .second{
+      background-color: #B70404;
+      grid-area: 1 / 2 / 3 / 5;
+    }
+
+    .third{
+      background-color: #EEE3CB;
+      grid-area: 2 / 1 ;
+      border-top: 10px solid black;
+    }
+
+    .fourth{
+      grid-area: 3 / 1 / 5 / 2;
+      background-color: #0C134F;
+    }
+
+    .fifth{
+      background-color:  #EEE3CB;
+      grid-area: 3 / 2 / 5 / 3;
+    }
+
+    .sixth{
+      background-color: #EEE3CB;
+      grid-area: 3 / 3 / 4 / 5;
+    }
+    
+    .seventh{
+      background-color: #F9D949;
+      grid-area: 4 / 3 / 5 / 5;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="parent">
+    <div class="container">
+      <div class="grcon first"></div>
+      <div class="grcon second"></div>
+      <div class="grcon third"></div>
+      <div class="grcon fourth"></div>
+      <div class="grcon fifth"></div>
+      <div class="grcon sixth"></div>
+      <div class="grcon seventh"></div>
+    </div>
+  </div>
+</body>
+
+</html>
